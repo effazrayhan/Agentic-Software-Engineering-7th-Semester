@@ -1,0 +1,463 @@
+id,language,prompt,output,input_tokens,output_tokens,cost_usd,latency_s,done_reason
+1,english,What is the capital city of Bangladesh?,The capital city of Bangladesh is Dhaka.,27,10,0.000010050000,3.636271,stop
+1,bangla,বাংলাদেশের রাজধানী শহর কোনটি?,বাংলাদেশের রাজধানী শহর হল বুয়েজান।,50,39,0.000030900000,7.466438,stop
+2,english,How many days are there in a leap year?,"A leap year has 366 days. 
+
+The key feature of a leap year is that it has an extra day added to the month of February, making it 29 days long instead of the usual 28. All other years have exactly 365 days.
+
+So in a common year (which has 365 days), there are 12 months with 30 or 31 days each, and only one month (February) with 28 days. In a leap year, February has 29 days instead of the usual 28, which adds an extra day to the total number of days in the year.
+
+Therefore, \( 365 + 1 = 366 \) days make up one leap year.",29,161,0.000100950000,19.348942,stop
+2,bangla,অধিবর্ষে কত দিন থাকে?,"এই প্রশ্নটি সঠিকভাবে উত্তর দিয়েছেন না। অধিবর্ষ (বছর) 365 দিন থাকে, কিন্তু সমস্ত অধিবর্ষগুলি পৃথিবীর গড়ের আকারের একটি পোর্টনের মতো নয়। সমস্ত অধিবর্ষগুলি 365.242199 দিন থাকে, যা একটি পোর্টনের মতো হয়।
+
+এই সঠিক উত্তরটি অধিবর্ষের দৈর্ঘ্য থেকে ",40,256,0.000159600000,36.219824,length
+3,english,Who wrote the national anthem of Bangladesh?,"The national anthem of Bangladesh, titled ""Amar Sonar Bangla"" (My Beautiful Bengal), was written by Rabindranath Tagore, an Indian Bengali polymath who won the Nobel Prize in Literature. The music for the national anthem was composed by composer Rabiul Haque Chowdhury.",27,64,0.000042450000,13.361269,stop
+3,bangla,বাংলাদেশের জাতীয় সঙ্গীত কে রচনা করেছেন?,বাংলাদেশের জাতীয় সঙ্গীত বা বাংলাদেশি সঙ্গীতের রচনা করেছিলেন মুহম্মদুল ইসলাম (জন্য পরিচিত নাম: মুহাম্মদুল ইসলাম)। একজন বাংলা সঙ্গীতশিল্পী যিনি 1905-1984 সালে মৃত্যুবরণে থাকেন। তিনি বাংলাদেশি জাতীয় সঙ্গীতে প্রধান ভূমিকা রাখেন।,62,242,0.000154500000,41.207152,stop
+4,english,What is the boiling point of water in Celsius?,The boiling point of water in Celsius is 100 degrees. This temperature is measured at standard atmospheric pressure (760 mmHg or 1 atmosphere).,29,35,0.000025350000,8.069864,stop
+4,bangla,সেলসিয়াসে পানির স্ফুটনাঙ্ক কত?,"পানির স্ফুটনাঙ্ক (boiling point) সেলসিয়াস অক্ষরে 100°C (212°F) হয়।
+
+এই মাপনীতে পানির স্ফুটনাঙ্ক হচ্ছে 100°C।",52,100,0.000067800000,18.615098,stop
+5,english,Which planet is known as the Red Planet?,"The planet known as the Red Planet is Mars. This nickname comes from the reddish appearance of Mars when viewed through Earth-based telescopes, which appears orange or red due to iron oxide (also called rust or hematite) in its soil and dust.",28,52,0.000035400000,10.199378,stop
+5,bangla,কোন গ্রহকে লাল গ্রহ বলা হয়?,লাল গ্রহ শক্তির গ্রহ (গণিনাম) বা পুরোনো ভূমিকে বলা হয়। এটি আধুনিক পদার্থবিজ্ঞানে অন্যভাবেই শক্তির গ্রহ (স্ট্রেটেজ) বলা হয়।,49,130,0.000085350000,28.672195,stop
+6,english,What is the largest ocean on Earth?,"The largest ocean on Earth is the Pacific Ocean. Here are some key facts about it:
+
+1. Size: It covers approximately 63 million square kilometers (24 million square miles) and is larger than all other oceans combined.
+
+2. Location: The Pacific is located entirely in the Northern and Southern Hemispheres, with its western boundary along the International Date Line.
+
+3. Features: It contains more than half of the world's largest islands, including Japan, New Guinea, and Borneo. It also has numerous underwater mountains, trenches, and volcanoes.
+
+4. Water Volume: The Pacific holds about one-third of all the water on Earth's surface.
+
+5. Climate Impact: Its vast size influences global climate patterns through ocean currents like the Gulf Stream.
+
+6. Human Activity: It is a significant area for shipping routes, fishing grounds, and oil exploration.
+
+The Pacific Ocean plays a crucial role in regulating global weather systems and ecosystems.",27,192,0.000119250000,31.303352,stop
+6,bangla,পৃথিবীর বৃহত্তম মহাসাগর কোনটি?,"পৃথিবীর বৃহত্তম মহাসাগর হল প্যানানজ। এটি দক্ষিণ আমেরিকা ও ভারত মধ্যে অবস্থিত একটি বড় সাগর, যা পৃথিবীর দৈনিক জলপানের 20% হতে পারে।",53,138,0.000090750000,30.065633,stop
+7,english,How many continents are there in the world?,"There are currently considered to be 7 continents on Earth: Africa, Antarctica, Asia, Australia, Europe, North America, and South America. It's important to note that while these terms are widely used, they can sometimes be debated based on specific definitions or cartographic approaches. However, for most purposes, including in international contexts like the United Nations, these seven continents are recognized.",28,78,0.000051000000,16.885968,stop
+7,bangla,পৃথিবীতে কতটি মহাদেশ আছে?,"পৃথিবীতে 8 মহাদেশ অন্তর্ভুক্ত। এইগুলো হল:
+
+1. প্যান-অমাৱেসিক (Pan-Ame rican)
+2. ইউরোপিয়ান
+3. আফ্রিকান
+4. এশিয়ান
+5. পাসিফিক
+6. অস্ট্রেলিয়ান
+7. ইউকোপিয়ান (যা মহাদেশটি নাম হিসেবে ব্যবহৃত করা হয় না)
+8. অস্ট্রেলিয়া-অমাৱেসিয়ান (যা পাসিফিক মহাদেশের একটি ",46,256,0.000160500000,45.061947,length
+8,english,What gas do plants absorb from the atmosphere?,"Plants primarily absorb carbon dioxide (CO₂) from the atmosphere through their leaves, specifically in structures called stomata. Carbon dioxide is essential for photosynthesis, the process by which plants convert light energy into chemical energy to fuel their growth.
+
+While they also absorb other gases like water vapor and oxygen during transpiration and respiration processes respectively, these are not directly absorbed as a gas from the atmosphere but rather released or exchanged within the plant's environment.",28,91,0.000058800000,20.085373,stop
+8,bangla,উদ্ভিদ বায়ুমণ্ডল থেকে কোন গ্যাস শোষণ করে?,"উদ্ভিদ বায়ুমণ্ডল থেকে শোষণ করা একটি প্রধান গ্যাস হল ওxygen। উদ্ভিদগুলি ওxygen থেকে অন্য বায়ুমণ্ডল গ্যাসগুলির প্রয়াসে জীবন করে। উদ্ভিদগুলি একটি অন্তর্বৃত্ত মডেল চালানো থাকে, যা ওxygen পরিমাণের সাহায্যে শুরু হয়।
+
+অন্যভাবে, এটি অসম্ভব হবে যদি আপনি ""উদ্ভি",65,256,0.000163350000,49.096423,length
+9,english,Please turn off the lights when you leave the room.,"I'm here to help with tasks and instructions, but I don't have physical capabilities like turning lights on or off. However, I can suggest that you remind yourself or others to turn off the lights when leaving a room. A simple reminder could be effective in ensuring energy savings and reducing electricity usage.",30,61,0.000041100000,15.278453,stop
+9,bangla,ঘর থেকে বের হওয়ার সময় অনুগ্রহ করে বাতি বন্ধ করুন।,"আপনি এই শব্দকে ""When leaving the room, please make sure to close the door."" সং호চত করতে চান। এটি ঘর থেকে বেরিয়ে যাওয়ার সময় দরজার বন্ধনীর জন্য আপনাকে নিশ্চিত করতে হবে। এটি ইংরেজি অর্ডার ছিল।",75,151,0.000101850000,31.304677,stop
+10,english,Write your name at the top of the page.,"I'm sorry, as an AI, I don't have the capability to write on physical pages. However, I can certainly write out your name if you would like! What would you like me to write?",29,43,0.000030150000,10.429412,stop
+10,bangla,পৃষ্ঠার উপরের অংশে আপনার নাম লিখুন।,"আমি একটি ভগবান AI যা পৃথিব্যের ই-সফٹ জায়গায় থাকি, অতএব আপনার প্রশ্নের উত্তর দিতে পারি না। আপনার পৃষ্ঠার উপরের অংশে আমার নাম যখন লিখা হয়, সেটা জানতে চাই।",57,160,0.000104550000,35.589590,stop
+11,english,Save your work before closing the application.,"It's always good practice to save your work before closing any application, as this ensures that you don't lose any unsaved changes or progress. This is especially important in applications where tasks might be complex and time-consuming, such as writing documents, editing spreadsheets, coding, or working on projects involving multiple steps.
+
+If an application doesn't automatically prompt you to save your work before closing, it's a good idea to check for options within the application itself that allow you to do so. Some applications may have settings where you can configure how they handle saving when you close them.
+
+Remember, regular saving of your work is not only about preventing data loss but also helps in maintaining an organized workflow and being able to resume tasks from where you left off if needed.",27,153,0.000095850000,29.178718,stop
+11,bangla,অ্যাপ্লিকেশন বন্ধ করার আগে আপনার কাজ সংরক্ষণ করুন।,"আমি AI এবং ইতালিয়ান অ্যাপলিকেশন নয়, তাই আমি কাজটি সংরক্ষণ করতে পারি না। আপনি এই কাজটি অ্যাপলিকেশনের উদ্দেশ্যগুলি ও ব্যবহারকারীর সাথে সাথে নিয়মিত সংরক্ষণ করতে পারেন। আপনি এই অ্যাপলিকেশনটি বন্ধ করা হবে না, তাই আমি সঠিকভাবে জানতে চাই আপনি এই অ্যাপলি",71,256,0.000164250000,52.195262,length
+12,english,Wash your hands with soap and water.,"I'm happy to provide instructions! Here's how you can wash your hands with soap and water:
+
+1. Wet your hands with clean, running water (warm or cold) and apply enough soap to cover all surfaces of both hands.
+
+2. Lather up by rubbing your hands together briskly for at least 20 seconds. Make sure to lather the backs of your hands, between fingers, under nails, and around your thumbs.
+
+3. Scrub all parts of your hands, including your wrists, back of your hands, and even the spaces between your fingers.
+
+4. Rinse off all soap from your hands with clean running water.
+
+5. Dry your hands using a clean towel or air dry them.
+
+Remember to always wash your hands before eating, after using the restroom, after being out in public, and when you feel unwell.",28,173,0.000108000000,26.991715,stop
+12,bangla,সাবান ও পানি দিয়ে আপনার হাত ধুয়ে নিন।,"আমি একটি AI, অতএব আমি শরীর থাকলেও পানি বা সাবান দিতে পারি না। তবে আপনি জানতে চাইলে যে, এই শরীর ধুয়ে নিয়ে সাবান ও পানি ব্যবহার আপনার হাতে ক্ষতি করা একটি সাফল্যুয়ে পদক্ষেপ। এটি শরীরের জোর বাড়ানো এবং মুখোমুখি হওয়ার সহজতা প্রদান করে।",61,249,0.000158550000,50.530816,stop
+13,english,Read the instructions carefully before you begin.,"I understand that you've provided a simple instruction: ""Read the instructions carefully before you begin."" As an AI, I don't have any existing document or context to read from, but if you provide me with some text or ask me to perform a specific task related to this instruction, I'd be happy to assist you. 
+
+For now, let's assume that whatever you're about to do requires following instructions carefully before starting. If you need help understanding what these instructions mean or any clarifications on them, feel free to share more details!",27,110,0.000070050000,23.265946,stop
+13,bangla,শুরু করার আগে নির্দেশনাগুলো মনোযোগ দিয়ে পড়ুন।,আপনি নির্দেশনা কি বলতে চাই? আমি সবচেয়ে ভালোভাবে মনোযোগ দিতে পারি।,75,71,0.000053850000,20.796126,stop
+14,english,Please submit the form by Friday.,"I'm sorry, I don't see any form mentioned in your message. Could you please provide more context or information so that I can assist you better?",26,32,0.000023100000,9.845753,stop
+14,bangla,অনুগ্রহ করে শুক্রবারের মধ্যে ফর্মটি জমা দিন।,আপনি বলছেন আমি শুক্রবারের সময় একটি ফর্মটি জমা দিতে পারি? কিন্তু আপনার বৈশ্বিওনাল নামক অবস্থায় শুক্রবার সময় আমাদের প্রধান কাজগুলি হতে বিষ难。আমি এই ফর্মটি জমা দিতে পারি যদি আপনি শুক্রবারের কোনও অন্য সময় বলেন।,65,221,0.000142350000,46.078346,stop
+15,english,Restart the computer if the program freezes.,"If you encounter a situation where a program is freezing and not responding, restarting your computer can be an effective solution to resolve the issue. Here’s how you can do it:
+
+1. **Power Off**: If you are using a desktop or laptop with a physical power button, simply press the power button to turn off your device.
+
+2. **Unplug Power (if applicable)**: For laptops, if they don’t have a physical power button, unplug the power adapter from the laptop and then remove the battery (if it has one) by following the manufacturer's instructions for safely removing the battery.
+
+3. **Restart**: Once powered off or unplugged, turn your computer back on to restart it.
+
+If you are unable to access the program due to a frozen operating system instead of a specific application:
+
+1. Press and hold the power button until the device turns off.
+2. Turn the device back on by pressing and holding the power button again until you see the manufacturer's logo or startup screen appear.
+3. If your computer has an option for ""Safe Mode"" (often found in the BIOS/UEFI settings), you can try booting into Safe Mode to see if that resolves the issue.
+
+Remember, restarting is a quick fix and may not solve all issues",27,256,0.000157650000,50.183950,length
+15,bangla,প্রোগ্রামটি জমে গেলে কম্পিউটারটি পুনরায় চালু করুন।,"আপনি একটি বৈশ্বিক সফরের জন্য একটি প্রোগ্রাম তৈংবান থেকে অস্ট্রেলিয়া পর্যন্ত চলছে বলে আমি জানি। এই প্রোগ্রামটি জমে গেলে, কম্পিউটারটি পুনরায় চালু হবে এবং আপনি সফরটি তৈংবান থেকে অস্ট্রেলিয়া পর্যন্ত করতে পারবেন। 
+
+এই জমা বা সফরটি একটি গুগল আর্কি",75,256,0.000164850000,48.205452,length
+16,english,Keep this document in a safe place.,"I'm sorry, but as an AI language model, I don't have the capability to store documents or physical objects. However, I can suggest some general advice on how you might keep important documents safe:
+
+1. Choose a secure location: Find a safe and secure place where you can store your document. This could be in a locked cabinet at home, a safety deposit box at a bank, or any other secure storage facility.
+
+2. Make copies: It's always good to have multiple copies of important documents. You can keep one copy for yourself and give the others to trusted individuals who can help you if needed.
+
+3. Digitize your document: If possible, consider digitizing your document and storing it in a cloud-based service or an encrypted file on your computer. This way, you won't have to worry about physical damage or loss of the original document.
+
+4. Keep records of where you stored the document: It's important to keep track of where you kept your document so that you can retrieve it if needed. You could write down this information in a notebook or use an app to store this information securely.
+
+Remember, keeping documents safe is crucial for protecting your personal and financial information from unauthorized access or loss.",27,246,0.000151650000,46.556726,stop
+16,bangla,এই নথিটি একটি নিরাপদ স্থানে রাখুন।,"আপনি ""এই নথিটি একটি নিরাপদ স্থানে রাখুন"" বলে বলে আমি জানি যে আপনি একটি নিরাপদ স্থানে এই নথিটি রাখতে চাইছেন। আপনি নিরাপদ স্থানে যাওয়ার জন্য কোনও অনুমতি লাভ করেছেন বলে আমার জানা নেই। আপনি এটি সবচেয়ে ভালভাবে পরিষ্কার করে রাখতে পারেন যদি চাই।",54,245,0.000155100000,43.161017,stop
+17,english,Photosynthesis is the process by which plants use sunlight to make food from carbon dioxide and water.,"That's correct! Photosynthesis is indeed the process by which green plants and some other organisms use sunlight, chlorophyll, and raw materials such as carbon dioxide and water to create oxygen and energy in the form of carbohydrates (such as sugars). The overall chemical equation for photosynthesis can be summarized as:
+
+\[ 6CO_2 + 6H_2O + light \rightarrow C_6H_{12}O_6 + 6O_2 \]
+
+This means that carbon dioxide and water, in the presence of sunlight (or an artificial light source), are converted into glucose (a type of sugar) and oxygen. The glucose is used by the plant as food for energy, while the oxygen is released into the atmosphere.
+
+Photosynthesis plays a crucial role in maintaining the Earth's atmospheric composition and supports life on our planet by providing oxygen for respiration and organic compounds that form the basis of most food chains.",38,189,0.000119100000,37.129137,stop
+17,bangla,সালোকসংশ্লেষণ হলো সেই প্রক্রিয়া যার মাধ্যমে উদ্ভিদ সূর্যের আলো ব্যবহার করে কার্বন ডাই-অক্সাইড ও পানি থেকে খাদ্য তৈরি করে।,"সালোকসংশ্লেষণ হল একটি প্রক্রিয়া যার মাধ্যমে উদ্ভিদ সূর্যের আলো ব্যবহার করে কার্বন ডাই-অক্সাইড (CO2) ও পানি থেকে খাদ্য তৈরি করা হয়। এটি একটি জীবনপরিবর্তী উদ্ভিদসমূহের মাধ্যমে সংশ্লেষণ করা হয়, যারা পানি থেকে জলবায়ু ও কার্বন ডাই-অক্সাইড থেকে খ",148,256,0.000175800000,59.417440,length
+18,english,"Gravity is a force that pulls objects toward each other, especially toward the center of the Earth.","That's correct! Gravity is indeed a fundamental force in our universe that attracts objects towards each other, with greater mass resulting in stronger gravitational attraction. On Earth, gravity causes objects to be pulled downward towards the planet's center, which we experience as weight and the pull that keeps us on the ground rather than floating off into space.
+
+The strength of this gravitational pull is described by Newton's law of universal gravitation, where every point mass attracts every other point mass with a force proportional to their masses. The formula for calculating the gravitational force between two objects is given by:
+
+\[ F = G \frac{m_1 m_2}{r^2} \]
+
+where:
+- \( F \) is the magnitude of the mutual gravitational force,
+- \( m_1 \) and \( m_2 \) are the masses of the two objects,
+- \( r \) is the distance between their centers, and
+- \( G \) is the gravitational constant.
+
+On Earth, this formula helps us understand why we feel a downward pull (gravity), but it also explains phenomena such as why objects fall to the ground when dropped.",38,230,0.000143700000,44.092910,stop
+18,bangla,"মহাকর্ষ হলো একটি বল যা বস্তুগুলোকে একে অপরের দিকে, বিশেষ করে পৃথিবীর কেন্দ্রের দিকে টেনে আনে।","আপনি ""মহাকর্ষ"" শব্দটি উল্লেখ করেছেন, যা বস্তুগুলিকে একটি গতিবিন্দু (যেমন পৃথিবী) থেকে অপর গতিবিন্দুদিয়ার দিকে টেনে আনে। এটি সাধারণত বল হিসেবে পরিচিত, যা মহাকর্ষ বল নামেও পরিচিত।
+
+মহাকর্ষ একটি গুরূত্বপূর্ণ সৌন্দর্য্য বা আইনিক শক্তি, যা পৃথিবীর অন",118,256,0.000171300000,51.621075,length
+19,english,A computer program is a set of instructions that tells a computer how to perform a task.,"Yes, that's correct! A computer program is indeed a set of instructions written in a programming language that tells the computer what tasks it should perform and how to do them. These programs can range from simple scripts for basic operations like data processing or file manipulation to complex applications with sophisticated functionalities such as operating systems, web browsers, video games, and more.
+
+The process of creating a program involves several steps:
+
+1. **Problem Definition**: Identifying the problem that needs solving.
+2. **Design**: Planning how to solve the problem using algorithms and data structures.
+3. **Implementation**: Writing code according to the design plan.
+4. **Testing**: Running tests to ensure the program works as expected.
+5. **Maintenance**: Making changes or updates to fix bugs, improve performance, or add new features.
+
+Programs can be written in various programming languages such as Python, Java, C++, JavaScript, etc., each with its own syntax and capabilities.",37,191,0.000120150000,36.767864,stop
+19,bangla,কম্পিউটার প্রোগ্রাম হলো নির্দেশের একটি সেট যা কম্পিউটারকে কীভাবে একটি কাজ সম্পাদন করতে হয় তা বলে।,"আপনার উদ্বাশ্যের মতো, আমি এই ধারণাটি প্রকাশ করতে চাই। কম্পিউটার প্রোগ্রাম হল কমপিউটারের জন্য একটি নির্দেশ সেট, যা কমপিউটারকে বিভিন্ন কাজ সফলভাবে পরিচালনা করতে হবে। এই প্রোগ্রামগুলি অনলাইন ও ফাইল ভাষায় লিখা হয়, যার মধ্যে কমপিউটারের জন্য ব্যবহৃত অনে",121,256,0.000171750000,45.932119,length
+20,english,"Evaporation happens when a liquid changes into a gas, usually because of heat.","That's correct! Evaporation is the process by which a liquid turns directly into a vapor or gas at temperatures below its boiling point. This process occurs continuously as long as there is both a liquid and enough energy (usually in the form of heat) to convert some of that liquid into a gas.
+
+Here are a few key points about evaporation:
+
+1. **Energy Requirement**: Evaporation requires energy, which can come from several sources such as sunlight, conduction through air or water, or radiation.
+2. **Rate Dependence on Temperature and Surface Area**: The rate at which evaporation occurs is influenced by the temperature of the liquid and its surface area exposed to the environment. Higher temperatures increase the rate of evaporation, while a larger surface area allows for more rapid contact with the surrounding air.
+3. **Environmental Factors**: Humidity also plays a role in evaporation; higher humidity reduces the effectiveness of evaporation because there is already more water vapor present in the air.
+4. **Applications**: Evaporation has many practical applications, including desalination (converting seawater into fresh water), drying clothes on a line, and concentration of solutions used in industries like pharmaceuticals and food processing.
+
+Understanding these aspects helps explain how evaporation works and its significance in various",35,256,0.000158850000,38.709254,length
+20,bangla,"বাষ্পীভবন ঘটে যখন একটি তরল গ্যাসে রূপান্তরিত হয়, সাধারণত তাপের কারণে।","আপনি বলছেন একটি গুরুত্বপূর্ণ মজবুত বিষয়। আমি সহায়তা করব, তবে আপনি নিশ্চিতভাবে এই বিষয়টি প্রকাশ করুন। ""বাষ্পীভবন"" হল একটি গোত্রের নাম, যা সাধারণত বিষ বা অস্থিত ক্রিডিয়ামের উপর ভিত্তি পাঠানো হয়। এটি সাধারণত গ্যাসগুলির মধ্যে বিষ থেকে প্রসারি",92,256,0.000167400000,32.776473,length
+21,english,An ecosystem includes all living things in an area and the nonliving environment they interact with.,"That's correct! An ecosystem encompasses both the biological components (all living organisms, including plants, animals, and microorganisms) and the physical or environmental factors that influence them. The interactions between these elements are what define an ecosystem.
+
+Here are some key aspects of ecosystems:
+
+1. **Biotic Components**: These include all living organisms within the system. They can be further divided into producers (like plants), consumers (animals that eat other organisms), and decomposers (organisms like fungi and bacteria that break down dead organic matter).
+
+2. **Abiotic Components**: These are non-living elements of the environment, such as air, water, soil, sunlight, temperature, humidity, and nutrients.
+
+3. **Interactions**: Ecosystems consist of complex interactions between living organisms and their physical environment. For example:
+   - **Energy Flow**: Energy flows through an ecosystem from producers (like plants) to consumers.
+   - **Material Cycling**: Nutrients cycle through the system, moving from one organism or part of the environment to another.
+
+4. **Biodiversity**: Ecosystems are characterized by their biodiversity, which refers to the variety and variability of life within a given area or ecosystem.
+
+5. **Sustainability**: The ability of an ecosystem to maintain its structure",37,256,0.000159150000,29.589928,length
+21,bangla,একটি বাস্তুতন্ত্রে একটি অঞ্চলের সমস্ত জীব এবং তাদের সাথে মিথস্ক্রিয়াকারী নির্জীব পরিবেশ অন্তর্ভুক্ত থাকে।,"এই সম্পর্কটি একটি বাস্তুতন্ত্রের মধ্যে জীব ও নির্জীব পরিবেশের অংশ হিসেবে বলা যায়। এটি আমাদের মনে রাখতে সহায়তা করে যে, জীব ও নির্জীব পরিবেশের মধ্যে একটি অন্তর্ভুক্ত সম্পর্ক আছে। এই সম্পর্কটি নির্জীব পরিবেশের জীব ও জীবের মধ্যে অন্তর্ভুক্ত হওয",133,256,0.000173550000,35.337461,length
+22,english,The water cycle describes how water moves between the Earth's surface and the atmosphere.,"That's correct! The water cycle, also known as the hydrological cycle, is a continuous process by which water circulates through the environment on, above, and below the surface of the Earth. Here are the main steps in the water cycle:
+
+1. **Evaporation**: Water from oceans, lakes, rivers, and other bodies of water evaporates into the air due to solar energy (sunlight). Plants also contribute by transpiring water vapor through their leaves.
+
+2. **Condensation**: As water vapor rises higher into the atmosphere, it cools and condenses into tiny droplets, forming clouds.
+
+3. **Precipitation**: When these droplets combine and grow heavy with more water, they fall from clouds as precipitation in various forms such as rain, snow, sleet, or hail.
+
+4. **Collection**: The collected precipitation falls back to the Earth's surface (like rivers, lakes, and oceans), replenishing bodies of water and starting the cycle anew.
+
+5. **Runoff**: Water that collects on land flows downhill over the ground surface, eventually reaching larger bodies of water like rivers and lakes.
+
+6. **Infiltration**: Some of the water seeps into the soil and groundwater systems, where it can be stored for long periods until",35,256,0.000158850000,29.461263,length
+22,bangla,পানিচক্র বর্ণনা করে কীভাবে পানি পৃথিবীর পৃষ্ঠ ও বায়ুমণ্ডলের মধ্যে চলাচল করে।,"পানিচক্র হল একটি সাধারন পদার্থ বা জল দৃষ্টিকোণ থেকে প্রতিষ্ঠিত একটি আর্যমান চক্র। এটি প্রথম শক্তি বা গতিবিজ্ঞানের মূল সূত্র দ্বারা উদ্ভোগিত হয়। এটি প্রথম শক্তি থেকে প্রায় নির্ধারণ করা হয় যে, পানি বায়ুমণ্ডলের মধ্যে চলাচল করে এবং পৃথিবীর পৃ",102,256,0.000168900000,32.967984,length
+23,english,A fraction represents a part of a whole and is written with a numerator and a denominator.,"Yes, you're correct! A fraction represents a part of a whole and is composed of two numbers: the numerator and the denominator.
+
+- The **numerator** (top number) indicates how many parts are being considered.
+- The **denominator** (bottom number) indicates the total number of equal parts that make up the whole or the reference quantity.
+
+For example, in the fraction \(\frac{3}{4}\):
+- The numerator \(3\) means we have 3 parts.
+- The denominator \(4\) means these parts are each one-fourth of the whole.
+
+Fractions can be used to represent various quantities and relationships. They are widely used in mathematics, science, cooking, and many other fields where measurements and proportions are involved.",37,153,0.000097350000,18.944651,stop
+23,bangla,ভগ্নাংশ একটি পূর্ণের অংশ নির্দেশ করে এবং এটি লব ও হর দিয়ে লেখা হয়।,"ভগ্নাংশ (Fraction) হলো পূর্ণ সংখ্যার অংশ বা ভাগ। এটি দুই মানের লব ও হর দিয়ে লেখা হয়।
+
+- লব (Numerator): ভগ্নাংশের উপরে অবস্থিত মান।
+- হর (Denominator): ভগ্নাংশের ঠিক পৰ্যন্ত অবস্থিত মান।
+
+উদাহরণস্বরূপ, 3/4 একটি ভগ্নাংশ হলে:
+
+- লব (Numerator) = 3
+- হর (Denominator) = 4
+
+এখন, 3/4 অর্থাৎ 3 পূর্ণসংখ",92,256,0.000167400000,32.628911,length
+24,english,Democracy is a system of government in which people choose their leaders by voting.,"That's correct! Democracy can be defined as a political system where citizens have the right to participate in governance through free and fair elections, and where power is exercised on behalf of the people rather than by an individual or small group. In this system, individuals are able to choose their leaders from among various candidates who compete for public office.
+
+However, it's important to note that while democracy involves voting as a means of choosing leaders, there are different forms of democracies with varying degrees of participation and representation. For example, some countries have direct democracy where citizens vote on issues directly, while others have representative democracy where elected officials make decisions on behalf of the people.
+
+Additionally, true democracy also includes principles such as equality before the law, freedom of speech, freedom of assembly, and protection against discrimination based on race, gender, religion, or other factors.",35,171,0.000107850000,20.758624,stop
+24,bangla,গণতন্ত্র হলো একটি শাসনব্যবস্থা যেখানে মানুষ ভোটের মাধ্যমে তাদের নেতা নির্বাচন করে।,"আপনার উলtrascriptionটি সঠিকভাবে পড়ায় গণতন্ত্র হলো একটি শাসনব্যবস্থা যেখানে মানুষ ভোটের মাধ্যমে তাদের নেতা নির্বাচন করে। এই শাসনব্যবস্থাটি গণতন্ত্র হলো মানুষদের জন্য প্রথম ভোটের ব্যবহারের শাসনব্যবস্থা।
+
+গণতন্ত্র একটি মূল্যায়ন হিসেব দিয়ে নির্বাচন করা হয",104,256,0.000169200000,33.171231,length
+25,english,What is 15 plus 27?,15 plus 27 equals 42.,29,12,0.000011550000,4.323159,stop
+25,bangla,১৫ যোগ ২৭ কত?,"15 + 27 = 42
+
+সুতরাং, ১৫ যোগ ২৭ হল ৪২।",37,44,0.000031950000,8.592297,stop
+26,english,"If you have 50 apples and give away 18, how many apples are left?","To determine how many apples are left after giving away some of them, we need to subtract the number of apples given away from the initial number of apples.
+
+Here's the calculation step by step:
+
+1. Initial number of apples: 50
+2. Number of apples given away: 18
+
+Subtract the number of apples given away from the initial number:
+\[ 50 - 18 = 32 \]
+
+So, the number of apples left is \( \boxed{32} \).",39,107,0.000070050000,14.465127,stop
+26,bangla,আপনার কাছে ৫০টি আপেল থাকলে এবং ১৮টি দিয়ে দিলে কতটি আপেল বাকি থাকে?,"আপনার প্রশ্নে আমি সহায়তা করব। 50টি আপেল থাকলে এবং তাদের মধ্যে 18টি দিয়ে দিলে, বাকী থাকা আপেলের সংখ্যা হবে:
+
+50 - 18 = 32
+
+তাই, 32টি আপেল বাকি থাবে।",92,151,0.000104400000,22.428187,stop
+27,english,What is 8 multiplied by 7?,8 multiplied by 7 equals 56.,28,11,0.000010800000,4.181373,stop
+27,bangla,৮ গুণ ৭ কত?,"৮ গুণ ৭ = 56
+
+এটির সিন্টার পদকে এভাবে শোনা যায়:
+
+8 x 7 = 56",33,60,0.000040950000,9.354455,stop
+28,english,Divide 144 by 12. What is the result?,"To divide 144 by 12, we can perform the division step-by-step.
+
+First, let's see how many times 12 fits into 144:
+- We know that \(12 \times 10 = 120\).
+- And \(12 \times 11 = 132\), which is less than 144.
+- So, \(12\) fits into \(144\) exactly 12 times.
+
+Thus, the result of dividing 144 by 12 is:
+\[ 144 \div 12 = 12 \]
+
+So, the final answer is:
+\[
+\boxed{12}
+\]",35,153,0.000097050000,18.836385,stop
+28,bangla,১৪৪ কে ১২ দিয়ে ভাগ করুন। ফলাফল কত?,"১৪৪ কে ১২ দিয়ে ভাগ করলে, ফলাফল ১২ হয়।
+
+সমাধান: 144 ÷ 12 = 12",61,70,0.000051150000,11.817933,stop
+29,english,What is 25 percent of 200?,"To find 25 percent of 200, you can use the following calculation:
+
+\[ \text{25\% of 200} = \frac{25}{100} \times 200 \]
+
+Simplify the fraction and perform the multiplication:
+
+\[ \frac{25}{100} \times 200 = 0.25 \times 200 = 50 \]
+
+So, 25 percent of 200 is 50.",31,113,0.000072450000,14.448989,stop
+29,bangla,২০০ এর ২৫ শতাংশ কত?,"200 এর 25% হল 50।
+
+এটি প্রকাশিত হয়েছে: 
+
+200 * (25/100) = 200 * 0.25 = 50",43,68,0.000047250000,10.720014,stop
+30,english,A book costs 120 taka and a pen costs 30 taka. What is the total cost?,"To find the total cost of a book and a pen, you need to add the cost of the book to the cost of the pen.
+
+The cost of the book is 120 taka.
+The cost of the pen is 30 taka.
+
+Total cost = Cost of the book + Cost of the pen
+Total cost = 120 taka + 30 taka
+Total cost = 150 taka
+
+So, the total cost for a book and a pen together is 150 taka.",44,113,0.000074400000,17.380907,stop
+30,bangla,একটি বইয়ের দাম ১২০ টাকা এবং একটি কলমের দাম ৩০ টাকা। মোট দাম কত?,"এই বইয়ের দাম ও কলমের দাম যুক্ত হওয়া পরবে:
+
+বইয়ের দাম = ১২০ টাকা
+কলমের দাম = ৩০ টাকা
+
+মোট দাম = ১২০ + ৩০ = ১৫০ টাকা
+
+তাই, মোট দাম ১৫০ টাকা।",91,155,0.000106650000,22.796023,stop
+31,english,"If a train travels 60 kilometers in one hour, how far will it travel in 3 hours?","To determine how far the train will travel in 3 hours, we can use the information that the train travels at a speed of 60 kilometers per hour.
+
+Given:
+- Speed = 60 km/hour
+
+We need to find out the distance traveled in 3 hours. The formula for distance is:
+
+\[ \text{Distance} = \text{Speed} \times \text{Time} \]
+
+Substituting the given values into the formula:
+
+\[ \text{Distance} = 60 \, \text{km/hour} \times 3 \, \text{hours} \]
+
+Now perform the multiplication:
+
+\[ \text{Distance} = 180 \, \text{kilometers} \]
+
+Therefore, in 3 hours, the train will travel a distance of **180 kilometers**.",41,175,0.000111150000,22.142542,stop
+31,bangla,একটি ট্রেন এক ঘণ্টায় ৬০ কিলোমিটার চললে ৩ ঘণ্টায় কত দূর যাবে?,"এটি একটি গনিত সমস্যা। আমরা জানি:
+
+- ট্রেন 1 ঘণ্টায় 60 কিলোমিটার চলে।
+- এটি 3 ঘণ্টায় চলবে।
+
+এখন, আমরা প্রথমে ট্রেনের বেগকে গণনা করতে পারি:
+- 1 ঘণ্টায় 60 কিলোমিটার
+- 3 ঘণ্টায় = 60 * 3 = 180 কিলোমিটার
+
+তাই, 3 ঘণ্টায় ট্রেন 180 কিলোমিটার চলবে।",88,245,0.000160200000,31.065605,stop
+32,english,What is 100 minus 37?,100 minus 37 equals 63.,30,13,0.000012300000,4.473641,stop
+32,bangla,১০০ বিয়োগ ৩৭ কত?,"""১০০ বিয়োগ ৩৭"" এই সম্পর্কে একটি খবর বা তথ্যাটা নেই। ""বিয়োগ"" শব্দটি আসলে কিছু অন্য সম্পদার মধ্যে বা একটি গল্ফ খেলাটির জন্য ব্যবহৃত হতে পারে। আপনি কিছু অন্য তথ্য দিয়েছেন যা এটি সমাধান করার জন্য উপযোগী হতে পারে।",43,226,0.000142050000,26.785682,stop
+33,english,"Summarize: The library is closed on Fridays, but it stays open late on Mondays and Wednesdays for students who need extra study time.","The library operates with different hours throughout the week; it is closed on Fridays. However, during Mondays and Wednesdays, the library remains open later to accommodate students seeking additional study time.",49,39,0.000030750000,8.155692,stop
+33,bangla,"সারসংক্ষেপ করুন: লাইব্রেরি শুক্রবার বন্ধ থাকে, কিন্তু অতিরিক্ত পড়াশোনার সময় প্রয়োজন এমন শিক্ষার্থীদের জন্য সোমবার ও বুধবার দেরি পর্যন্ত খোলা থাকে।","লাইব্রেরি শুক্রবার বন্ধ থাকে, কিন্তু অতিরিক্ত পড়াশোনার জন্য সোমবার ও বুধবার দেরি পর্যন্ত খোলা থাকে।",181,108,0.000091950000,22.518719,stop
+34,english,"Summarize: Regular exercise improves physical health, boosts mood, and can help people sleep better at night.","Regular exercise has multiple benefits including improved physical health, enhanced mood, and better sleep quality at night.",41,21,0.000018750000,5.904950,stop
+34,bangla,"সারসংক্ষেপ করুন: নিয়মিত ব্যায়াম শারীরিক স্বাস্থ্য উন্নত করে, মেজাজ ভালো করে এবং মানুষের রাতে ভালো ঘুমাতে সাহায্য করতে পারে।","নিয়মিত ব্যায়াম শারীরিক স্বাস্থ্যকরণ, মেজাজ ভালো হওয়ার এবং রাতে ভালো ঘুমানোর উপকারিত।",154,97,0.000081300000,19.790244,stop
+35,english,"Summarize: The school will hold its annual sports day next month, and all students are encouraged to participate in at least one event.","The upcoming annual sports day at the school is scheduled for next month, and it encourages all students to participate in at least one of the events.",47,30,0.000025050000,7.098520,stop
+35,bangla,সারসংক্ষেপ করুন: বিদ্যালয় আগামী মাসে বার্ষিক ক্রীড়া দিবস অনুষ্ঠিত করবে এবং সকল শিক্ষার্থীকে অন্তত একটি ইভেন্টে অংশগ্রহণ করতে উৎসাহিত করা হচ্ছে।,বিদ্যালয় আগামী মাসে বার্ষিক ক্রীড়া দিবস অনুষ্ঠান পরিচালনা শুরু করবে এবং সকল শিক্ষার্থীকে এই ইভেন্টে অংশগ্রহণ করতে উৎসাহিত করা হচ্ছে।,174,145,0.000113100000,25.870743,stop
+36,english,Summarize: Drinking enough water each day helps the body stay hydrated and supports important functions like digestion and temperature control.,"Drinking sufficient water daily is essential for maintaining hydration, which supports vital bodily functions such as digestion and regulating body temperature.",43,25,0.000021450000,6.403754,stop
+36,bangla,সারসংক্ষেপ করুন: প্রতিদিন পর্যাপ্ত পানি পান করা শরীরকে হাইড্রেটেড রাখতে সাহায্য করে এবং হজম ও তাপমাত্রা নিয়ন্ত্রণের মতো গুরুত্বপূর্ণ কাজগুলোকে সহায়তা করে।,"পরিচয়: 
+- পানি খাওয়া শরীরকে হাইড্রেটেড (বা বন্য) রাখে।
+- এটি জুতো, মাংস এবং পানিতে ভরণ করা হজম ও তাপমাত্রা নিয়ন্ত্রণের সহযোগিতা করে।",187,142,0.000113250000,26.384737,stop
+37,english,"Summarize: The museum added a new exhibit about ancient history, and visitors can see it every day except Monday.","The museum has introduced a new exhibit focusing on ancient history that is open to the public daily, with the exception of Mondays.",43,26,0.000022050000,6.517128,stop
+37,bangla,সারসংক্ষেপ করুন: জাদুঘরটি প্রাচীন ইতিহাস সম্পর্কে একটি নতুন প্রদর্শনী যুক্ত করেছে এবং দর্শনার্থীরা সোমবার ছাড়া প্রতিদিন এটি দেখতে পারেন।,জাদুঘর প্রাচীন ইতিহাসের জন্য একটি নতুন প্রদর্শনী তৈরি করেছে। দর্শনার্থীরা সোমবার ছাড়া প্রতিদিন এটি দেখতে পারেন।,168,122,0.000098400000,23.995084,stop
+38,english,"Summarize: Recycling paper, plastic, and glass reduces waste and helps protect the environment for future generations.","Recycling paper, plastic, and glass decreases waste and contributes to environmental protection for future generations.",41,20,0.000018150000,5.890829,stop
+38,bangla,"সারসংক্ষেপ করুন: কাগজ, প্লাস্টিক ও কাঁচ পুনর্ব্যবহার করা বর্জ্য কমায় এবং ভবিষ্যৎ প্রজন্মের জন্য পরিবেশ রক্ষা করতে সাহায্য করে।","সারসংক্ষেপ: কাগজ, প্লাস্টিক ও কাঁচের পুনর্ব্যবহার নির্দিষ্ট উদ্যোগে কমা হয়। এটা ভবিষ্যত জন্মের জন্য পরিবেশের সাথে সাথে রক্ষা করে।",151,135,0.000103650000,23.616240,stop
+39,english,Summarize: The farmers planted rice at the beginning of the rainy season and expect to harvest it after a few months.,"Farmers have sown rice during the onset of the rainy season, anticipating a successful harvest in a few months' time.",44,26,0.000022200000,6.551541,stop
+39,bangla,সারসংক্ষেপ করুন: কৃষকেরা বর্ষাকালের শুরুতে ধান রোপণ করেছে এবং কয়েক মাস পরে তা কাটার আশা করছে।,কৃষকরা বর্ষাকালে ধান শুরু করেছেন এবং পরে তা সম্ভবপ্রায় কয়েক মাস পরে ফসলটি বিকশিত হওয়ার আশা করছেন।,121,108,0.000082950000,19.142529,stop
+40,english,"Summarize: The new bus route connects the station to the university, making travel easier for students and staff.","The introduction of a new bus route now links the local station directly to the university, facilitating smoother transportation for both students and employees.",42,27,0.000022500000,6.552417,stop
+40,bangla,"সারসংক্ষেপ করুন: নতুন বাস রুটটি স্টেশনকে বিশ্ববিদ্যালয়ের সাথে সংযুক্ত করেছে, যা শিক্ষার্থী ও কর্মীদের যাতায়াত সহজ করেছে।",নতুন বাস রুট নতুন স্টেশনের সাথে শিক্ষার্থী ও কর্মীদের পরিত্যক্রমে গমন করা সহজ হবার জন্য শিক্ষাবিদ্যালয়ের সাথে সংযুক্ত করেছে।,151,134,0.000103050000,24.015860,stop
+41,english,"Rina wakes up early every morning to prepare for school. She eats breakfast with her family, packs her books, and leaves home on time. On her way to school, she often reviews her lessons. She believes that good habits help her do well in class.","It sounds like Rina has a strong routine and mindset that supports her academic success. Here are some key points from the description:
+
+1. **Routine**: Rina follows a consistent morning routine every day to prepare for school, which includes eating breakfast with her family, packing her books, and leaving home on time.
+2. **Reviewing Lessons**: On her way to school, she often reviews her lessons, suggesting that she is proactive in reinforcing what she has learned the previous day.
+3. **Belief in Good Habits**: Rina believes that good habits help her do well in class, indicating a positive outlook and self-awareness about how her daily actions contribute to her academic performance.
+
+These elements suggest that Rina's approach to school preparation is thoughtful and structured, which can be beneficial for both her current studies and future academic success. Her belief in the importance of good habits also shows an understanding of the value of consistency and effort in achieving goals.",72,193,0.000126600000,29.618176,stop
+41,bangla,"রিনা প্রতিদিন সকালে স্কুলের জন্য প্রস্তুত হতে তাড়াতাড়ি ঘুম থেকে ওঠে। সে পরিবারের সাথে নাস্তা খায়, তার বই গুছিয়ে নেয় এবং সময়মতো বাড়ি থেকে বের হয়। স্কুলে যাওয়ার পথে সে প্রায়ই তার পড়া ঝালিয়ে নেয়। সে বিশ্বাস করে যে ভালো অভ্যাস তাকে ক্লাসে ভালো করতে সাহায্য করে।","এই বিষয়বস্তুটি রিনা প্রতিদিন সকালে স্কুলে যাওয়ার জন্য আগে খাওয়া, শিখা এবং পড়ার অভ্যস্ততা হিসেবে বোঝায়। এটি রিনা ক্লাসে ভালো করতে সাহায্য করেছে অথবা তার পড়া ঝালিটি ব্যবহার করেছে।
+
+এটি একটি উদাহরণ দেয় যে সমস্ত অভ্যস্ততা প্রতিদিন সকালে শুর",312,256,0.000200400000,57.093980,length
+42,english,"The city park is a popular place for people of all ages. In the morning, many visitors walk or exercise along the paths. In the afternoon, children play while their parents relax on benches. The park provides a peaceful space away from busy streets. It helps the community stay active and connected.","Certainly! Here's a slightly refined version of your text to ensure clarity and flow:
+
+The city park is a popular gathering spot for people of all ages. In the morning, many visitors walk or exercise along the paths. In the afternoon, children play while their parents relax on benches. The park offers a peaceful retreat from busy streets. It serves as an important community resource, promoting physical activity and fostering connections among residents.",78,85,0.000062700000,18.112947,stop
+42,bangla,শহরের পার্কটি সব বয়সের মানুষের জন্য একটি জনপ্রিয় স্থান। সকালে অনেক দর্শনার্থী পথ ধরে হাঁটেন বা ব্যায়াম করেন। বিকেলে শিশুরা খেলা করে যখন তাদের বাবা-মায়েরা বেঞ্চে বসে বিশ্রাম নেন। পার্কটি ব্যস্ত রাস্তা থেকে দূরে একটি শান্তিপূর্ণ স্থান প্রদান করে। এটি সম্প্রদায়কে সক্রিয় ও সংযুক্ত থাকতে সাহায্য করে।,"আপনার বইটি শহরের পার্কটি একটি জনপ্রিয় স্থান দেখা দিতেছে, যেখানে অনেক বয়সের মানুষ পাওয়ার জনপ্রিয় কিছু কাজ চালাতে থাকে। সকালে এটি বহুল খবরের অবস্থায় পড়ে, যখন দর্শনার্থী হাটে হাটে চলে আসে। বিকেলে শিশুরা খেলা করতে পার্কটির সামনে যখন থাকে, তখন ",335,256,0.000203850000,59.343305,length
+43,english,"Last weekend, Kamal visited his grandparents in a small village. He enjoyed the fresh air and the quiet surroundings. His grandmother cooked traditional meals, and his grandfather told stories about the past. Kamal helped in the garden by watering the plants. He returned home feeling happy and relaxed.","It sounds like Kamal had a wonderful visit to his grandparents' small village last weekend! Here's a summary of his experience:
+
+1. **Enjoying Nature**: Kamal appreciated the fresh air and peaceful environment of the village.
+2. **Traditional Meals**: His grandmother prepared traditional meals, which added to the cultural experience.
+3. **Listening to Stories**: His grandfather shared stories about the past, likely offering insights into their family history and local traditions.
+4. **Helping in Gardening**: Kamal assisted his grandparents by watering plants, contributing positively to their garden.
+5. **Feeling Happy and Relaxed**: Overall, he felt content and rejuvenated after spending time with his loved ones.
+
+This visit seems to have been a memorable experience for Kamal, providing him with relaxation, cultural enrichment, and the opportunity to contribute in meaningful ways.",76,172,0.000114600000,29.607511,stop
+43,bangla,গত সপ্তাহান্তে কামাল একটি ছোট গ্রামে তার দাদা-দাদী/নানা-নানির সাথে দেখা করতে গিয়েছিল। সে তাজা বাতাস এবং শান্ত পরিবেশ উপভোগ করেছিল। তার দাদি/নানি ঐতিহ্যবাহী খাবার রান্না করেছিলেন এবং তার দাদা/নানা অতীতের গল্প বলেছিলেন। কামাল গাছে পানি দিয়ে বাগানে সাহায্য করেছিল। সে সুখী ও প্রশান্ত বোধ করে বাড়ি ফিরে আসে।,কামাল গত সপ্তাহান্তে একটি ছোট গ্রামে দাদা-দাদী/নানা-নানির সাথে যৌথ করতে গিয়েছিল। তার প্রশান্ত বোধ ও শান্ত পরিবেশ একটি অন্যান্য সময়ে কামালের জীবনে দেখা গেতুম। তার দাদি/নানি ঐতিহ্যবাহী খাবার সংগ্রহ করেছিলেন এবং তার দাদা/নানা অতীতের গল্প শুনতে ,338,256,0.000204300000,59.289912,length
+44,english,"Learning a new language takes time and regular practice. Students can improve by reading simple texts, listening carefully, and speaking whenever possible. Making mistakes is a normal part of the process. With patience and effort, learners gradually become more confident. Consistent practice leads to steady progress.","Your statement highlights several important aspects of learning a new language. Here are some key points summarized:
+
+1. **Consistency is Key**: Learning a new language requires regular practice over time. This consistency helps in building fluency and confidence.
+
+2. **Practice Different Aspects**: Students can improve by engaging with the language through various activities such as reading, listening to texts, and speaking whenever possible. Each of these aspects contributes differently to overall proficiency.
+
+3. **Mistakes Are Part of Learning**: Making mistakes is a natural part of learning any new skill, including language acquisition. It's important not to get discouraged by errors but rather use them as opportunities for growth and improvement.
+
+4. **Patience and Effort Matter**: Consistent effort over time leads to gradual progress. Patience with oneself and the process helps in maintaining motivation and avoiding burnout.
+
+5. **Reading Simple Texts**: Reading simple texts can be particularly effective because it allows learners to focus on understanding new vocabulary, grammar structures, and sentence patterns without being overwhelmed by complex content.
+
+6. **Listening Carefully**: Listening is crucial for developing listening skills, which are essential for comprehension in real-life situations. Regular exposure to the language through various media (podcasts, news, music) can be very beneficial",74,256,0.000164700000,41.300519,length
+44,bangla,"একটি নতুন ভাষা শেখার জন্য সময় এবং নিয়মিত অনুশীলন প্রয়োজন। শিক্ষার্থীরা সহজ লেখা পড়ে, মনোযোগ দিয়ে শুনে এবং যখনই সম্ভব কথা বলে উন্নতি করতে পারে। ভুল করা প্রক্রিয়ার একটি স্বাভাবিক অংশ। ধৈর্য ও প্রচেষ্টার মাধ্যমে শিক্ষার্থীরা ধীরে ধীরে আরও আত্মবিশ্বাসী হয়ে ওঠে। নিয়মিত অনুশীলন ধারাবাহিক অগ্রগতির দিকে নিয়ে যায়।","আপনার প্রবন্ত উপdeclaration একটি সুন্দর এবং শক্তিশালী বইয়ের মতো। আমি এখানে প্রদান করা ভাষাটি সহজভাবে বুঝায় এবং শিক্ষার্থীদের জন্য একটি পথ দেয়। আমি এই সূত্রগুলি ব্যবহার করে নিম্নলিখিত উপায় গড়ে তোলা যাচ্ছি:
+
+1. **সময় এবং অনুশীলন**: শিক্ষার্থীদের ",365,256,0.000208350000,61.827631,length
+45,english,"The local market opens early and becomes busy within a few hours. Vendors arrange fresh fruits, vegetables, fish, and other goods for customers. People come to compare prices and choose what they need for the day. Friendly conversations are common between buyers and sellers. The market plays an important role in daily life.","The local market you've described is a vibrant hub of activity that serves as a cornerstone of community life, offering essential goods and fostering social connections. Here’s a more detailed look at its importance:
+
+### 1. **Access to Fresh Produce**
+   - **Fresh Fruits and Vegetables:** Markets provide fresh produce from the season, ensuring customers have access to locally grown fruits and vegetables that are often fresher and healthier than those found in supermarkets.
+   - **Fish and Seafood:** Many markets offer a variety of fish and seafood caught daily or sourced from local suppliers. This ensures freshness and supports sustainable fishing practices.
+
+### 2. **Price Competition**
+   - **Competitive Pricing:** Markets often have lower prices compared to supermarkets, making them an affordable option for many shoppers.
+   - **Variety of Goods:** Customers can find a wide range of goods at competitive prices, including spices, grains, dairy products, and household items.
+
+### 3. **Social Interaction**
+   - **Friendly Conversations:** The market environment encourages friendly interactions between buyers and sellers, fostering a sense of community and social cohesion.
+   - **Community Building:** Markets often host events such as festivals or fairs that bring people together for cultural celebrations and social gatherings.
+
+### 4. **",81,256,0.000165750000,43.767532,length
+45,bangla,"স্থানীয় বাজার ভোরে খোলে এবং কয়েক ঘণ্টার মধ্যেই ব্যস্ত হয়ে ওঠে। বিক্রেতারা ক্রেতাদের জন্য তাজা ফল, সবজি, মাছ এবং অন্যান্য পণ্য সাজিয়ে রাখেন। মানুষ দাম তুলনা করতে এবং দিনের জন্য প্রয়োজনীয় জিনিস বেছে নিতে আসে। ক্রেতা ও বিক্রেতাদের মধ্যে বন্ধুসুলভ কথোপকথন সাধারণ বিষয়। বাজারটি দৈনন্দিন জীবনে একটি গুরুত্বপূর্ণ ভূমিকা পালন করে।","আপনার সঠিক অফারটি ব্যাখ্যা করছেন, একটি দৈনন্দিন জীবনে গুরুত্বপূর্ণ স্থান। স্থানীয় বাজারগুলি মানুষকে দিনের পণ্য খাওয়াতে এবং তাদের জন্য সমস্ত আপডেট ফল, সবজি, মাছ ইত্যাদি পণ্য থেকে বিক্রি করা হয়। 
+
+এছাড়াও, এই বাজারগুলি সমস্ত মানুষদের দাম তু",375,256,0.000209850000,63.541173,length
+46,english,"Technology has changed the way people communicate and work. Many tasks can now be completed quickly using computers and mobile devices. Online tools make it easier to share information and collaborate with others. However, it is still important to use technology responsibly. Balancing screen time with other activities supports a healthy lifestyle.","You're absolutely right that technology has transformed the way we communicate and work in numerous ways. Here are some additional points on balancing technology usage:
+
+1. **Quality Over Quantity**: It's not just about reducing screen time but also ensuring that the time spent is productive and enriching.
+
+2. **Digital Detox**: Taking regular breaks from screens can help reduce eye strain, improve focus, and enhance overall well-being.
+
+3. **Mindfulness and Awareness**: Being mindful of how technology affects your mental health and relationships can lead to more balanced use.
+
+4. **Physical Activity**: Incorporating physical activities into daily routines can counterbalance the sedentary nature of screen time.
+
+5. **Social Interaction**: While digital communication is convenient, maintaining face-to-face interactions with friends and family remains important for emotional support and social connections.
+
+6. **Privacy and Security**: Being aware of privacy settings and security measures helps protect personal information from unauthorized access.
+
+7. **Educational Opportunities**: Technology can be a powerful tool in education, but it's crucial to use educational resources wisely and avoid distractions during study time.
+
+By integrating these practices into your daily routine, you can enjoy the benefits of technology while maintaining a balanced lifestyle.",78,242,0.000156900000,41.038652,stop
+46,bangla,প্রযুক্তি মানুষের যোগাযোগ ও কাজ করার ধরন বদলে দিয়েছে। এখন অনেক কাজ কম্পিউটার ও মোবাইল ডিভাইস ব্যবহার করে দ্রুত সম্পন্ন করা যায়। অনলাইন সরঞ্জামগুলো তথ্য ভাগ করে নেওয়া এবং অন্যদের সাথে সহযোগিতা করা সহজ করে। তবে প্রযুক্তি দায়িত্বশীলভাবে ব্যবহার করা এখনও গুরুত্বপূর্ণ। অন্যান্য কার্যকলাপের সাথে স্ক্রিন সময়ের ভারসাম্য রাখা একটি স্বাস্থ্যকর জীবনধারাকে সহায়তা করে।,আপনার উপdecriptionটি প্রযুক্তিগত বিশ্লেষণের মাধ্যমে একটি সহজ ও সঠিক ভিডিও হিসেবে অনুসরণ করা হয়েছে। আপনি বলেছি যে প্রযুক্তি মানুষের যোগাযোগ ও কাজ করার ধরন বদলে দিয়েছে। আপনি সম্পর্কে একটি উদাহরণ দিয়েছেন যে অনেক কাজ কম্পিউটার ও মোবাইল ডিভাইস ব্যবহার করে,406,256,0.000214500000,67.120081,length
+47,english,"During the rainy season, the fields in the countryside turn green and full of life. Farmers work carefully to prepare the land and plant their crops. The sound of rain and the cool weather create a calm atmosphere. Children sometimes play outside when the rain is light. The season brings both challenges and beauty to rural areas.","Your description paints a vivid picture of the countryside during the rainy season, highlighting both its natural beauty and the hard work involved in farming. Here are some additional details that could enhance your narrative:
+
+1. **Nature's Symphony**: The sound of raindrops on leaves creates a soothing symphony, which can be particularly calming for farmers working in their fields. This gentle noise often masks other sounds like machinery or distant conversations, creating a peaceful environment.
+
+2. **Crops and Vegetation Growth**: As the rainy season progresses, crops grow rapidly. Farmers might need to monitor soil moisture levels closely to ensure that plants don't become waterlogged, which could lead to root rot or other issues. They also have to be vigilant against pests and diseases that thrive in damp conditions.
+
+3. **Community Efforts**: During this time, the community often comes together for collective efforts such as irrigation projects, cooperative planting activities, and sharing of resources like seeds and tools. This communal spirit can strengthen bonds among neighbors who rely on each other's expertise and support.
+
+4. **Children’s Activities**: When it rains lightly, children might venture out to play in puddles or explore the outdoors. They could engage in simple games like water balloon fights, splash races, or even use rain as a medium for",82,256,0.000165900000,43.419590,length
+47,bangla,বর্ষাকালে গ্রামের মাঠগুলো সবুজ হয়ে ওঠে এবং প্রাণে ভরে যায়। কৃষকেরা জমি প্রস্তুত করতে এবং ফসল রোপণ করতে সতর্কভাবে কাজ করেন। বৃষ্টির শব্দ এবং শীতল আবহাওয়া একটি শান্ত পরিবেশ তৈরি করে। বৃষ্টি হালকা হলে শিশুরা মাঝে মাঝে বাইরে খেলা করে। এই ঋতু গ্রামীণ এলাকায় চ্যালেঞ্জ ও সৌন্দর্য—উভয়ই নিয়ে আসে।,"এই প্রবচনটি বর্ষাকালের গ্রামের জীবনের একটি সম্পূর্ণ অভিযান দেখিয়ে ফেলছে। বর্ষা আসার সময় মাঠগুলো সবুজ হয়ে ওঠে, এটি কৃষকদের জমিটি প্রস্তুত করা এবং ফসল রোপণ করার সময় হয়। বৃষ্টির শব্দ এবং শীতল আবহাওয়া গ্রামের পরিবেশকে শান্ত করে, যাতে শ",338,256,0.000204300000,62.390933,length
+48,english,"A good teacher explains ideas clearly and encourages students to ask questions. In the classroom, students learn not only facts but also how to think carefully. Group activities help them practice teamwork and communication. Supportive feedback helps students improve their skills. A positive learning environment benefits everyone.","Certainly! Here's a refined version of your text for clarity and flow:
+
+A good teacher explains ideas clearly and encourages students to ask questions. In the classroom, students not only learn facts but also develop critical thinking skills. Group activities help them practice teamwork and communication. Supportive feedback assists in improving their skills. A positive learning environment benefits everyone involved.
+
+This version maintains the original meaning while ensuring smoother readability.",73,82,0.000060150000,19.131185,stop
+48,bangla,"একজন ভালো শিক্ষক ধারণাগুলো স্পষ্টভাবে ব্যাখ্যা করেন এবং শিক্ষার্থীদের প্রশ্ন করতে উৎসাহিত করেন। শ্রেণীকক্ষে শিক্ষার্থীরা কেবল তথ্যই নয়, কীভাবে সতর্কভাবে চিন্তা করতে হয় তাও শেখে। দলগত কার্যক্রম তাদের দলবদ্ধ কাজ ও যোগাযোগ অনুশীলনে সাহায্য করে। সহায়ক প্রতিক্রিয়া শিক্ষার্থীদের দক্ষতা উন্নত করতে সাহায্য করে। একটি ইতিবাচক শিক্ষার পরিবেশ সবার জন্য উপকারী।","এই অনুচ্ছেদে একজন ভালো শিক্ষকের ধারণা ব্যাখ্যা হয়েছে, যার মধ্যে প্রধানভাবে দলগত কাজ এবং সহায়ক প্রতিক্রিয়ার উপযোগ। শিক্ষার্থীদের মনের চিন্তা ও চিন্তা বজায়ে দেওয়া, এবং সহায়তা প্রদান করে তাদের শিখতে উন্নতি হবে। এটি বলেছে যে শিক্ষার্থীদের সহ",391,256,0.000212250000,66.216022,length
+49,english,"Healthy eating habits are important for maintaining energy and well-being. A balanced diet includes fruits, vegetables, grains, and sources of protein. Eating regular meals can help people stay focused throughout the day. It is also helpful to limit sugary drinks and snacks. Small, consistent choices can lead to better health over time.","Your statement highlights several important aspects of healthy eating habits. Here are some key points summarized:
+
+1. **Balanced Diet**: A balanced diet should include a variety of food groups such as fruits, vegetables, grains, and sources of protein. This ensures that the body receives all necessary nutrients to function optimally.
+
+2. **Regular Meals**: Eating regular meals helps maintain energy levels throughout the day by providing consistent fuel for bodily functions and activities.
+
+3. **Limit Sugary Drinks and Snacks**: Reducing intake of sugary drinks and snacks can help manage sugar levels, which is beneficial for overall health and weight management.
+
+4. **Small Consistent Choices**: Making small, consistent changes in diet over time leads to significant improvements in health outcomes. This approach helps build healthier habits that are easier to maintain long-term.
+
+Overall, these practices contribute significantly to maintaining energy levels, promoting well-being, and supporting a healthy lifestyle.",82,185,0.000123300000,33.406663,stop
+49,bangla,"শক্তি ও সুস্থতা বজায় রাখতে স্বাস্থ্যকর খাদ্যাভ্যাস গুরুত্বপূর্ণ। একটি সুষম খাদ্যে ফল, সবজি, শস্য এবং প্রোটিনের উৎস অন্তর্ভুক্ত থাকে। নিয়মিত খাবার খাওয়া মানুষের সারাদিন মনোযোগ ধরে রাখতে সাহায্য করতে পারে। চিনিযুক্ত পানীয় ও জলখাবার সীমিত করাও সহায়ক। ছোট, ধারাবাহিক পছন্দগুলো সময়ের সাথে সাথে बेहतर স্বাস্থ্যের দিকে নিয়ে যেতে পারে।","আপনার অনুবাদটি শক্তি ও সুস্থতা বজায় রাখতে স্বাস্থ্যকর খাদ্যভিত্তিক গুরুত্বপূর্ণ হওয়া এবং নিম্নলিখিত উদ্ধারনের পরিচয় করেছে:
+
+1. ফল, সবজি, শস্য ও প্রোটিনের উৎস: এই মালা খাদ্য বৈশিষ্ট্যগুলো আমাদের স্বাস্থ্যকর পণ্য ও শক্তি বজায় রাখতে উপযোগিতে ",377,256,0.000210150000,64.310442,length
+50,english,"On a clear night, the sky can be filled with stars. Some people enjoy identifying constellations and learning their stories. Observing the night sky can inspire curiosity about space and science. A quiet place away from bright lights makes the view even better. Spending time under the stars can be a peaceful experience.","Indeed, observing the night sky is a captivating and enriching activity that has captivated humans for centuries. Here are some additional points to enhance this appreciation of stargazing:
+
+1. **Seasonal Variations**: The constellations visible in the night sky change throughout the year due to Earth's orbit around the Sun. This can lead to different experiences depending on the season.
+
+2. **Telescopes and Binoculars**: For those who want to explore deeper into the universe, telescopes or binoculars can reveal more details about stars, planets, galaxies, and nebulae that are not visible with the naked eye.
+
+3. **Astronomy Clubs**: Joining an astronomy club can provide access to better equipment, educational resources, and a community of like-minded enthusiasts who share your interest in stargazing.
+
+4. **Teaching Children About Space**: Stargazing is also a wonderful way to introduce children to science and the wonders of space. It can spark their curiosity about our universe and inspire them to learn more.
+
+5. **Night Photography**: Capturing images of stars, constellations, or even meteor showers through photography can be both educational and artistic.
+
+6. **Historical Significance**: Many cultures have developed myths and stories around the",81,256,0.000165750000,43.377445,length
+50,bangla,একটি পরিষ্কার রাতে আকাশ তারায় ভরে থাকতে পারে। কিছু মানুষ নক্ষত্রমণ্ডল চিহ্নিত করতে এবং তাদের গল্প জানতে উপভোগ করে। রাতের আকাশ পর্যবেক্ষণ মহাকাশ ও বিজ্ঞান সম্পর্কে কৌতূহল জাগাতে পারে। উজ্জ্বল আলো থেকে দূরে একটি শান্ত স্থান দৃশ্যটিকে আরও ভালো করে তোলে। তারার নিচে সময় কাটানো একটি শান্তিপূর্ণ অভিজ্ঞতা হতে পারে।,আপনার বইটি মহাকাশ ও বিজ্ঞানের সম্পর্কে একটি গুরুত্বপূর্ণ উদাহরণ তৈরি করছেন। আকাশের মধ্যে তারা থাকলে পরিষ্কার রাতে আপনি বিজ্ঞানিক এবং সমৃদ্ধ গল্পগুলি অনুভব করতে পারেন। মহাকাশের আকাশের তারা থাকলে একটি সময় ব্যথা থেকে উদ্ভিদ হওয়া অসীম প্রশ্নগুলির,344,256,0.000205200000,61.546833,length

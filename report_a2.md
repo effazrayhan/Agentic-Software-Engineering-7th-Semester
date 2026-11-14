@@ -1,53 +1,69 @@
 # Assignment 2 Report — English vs Bangla Token Cost
 
-**Model:** `qwen2.5:3b` (Ollama, `http://localhost:11434`)  
-**Settings (as implemented):** temperature `0`, fixed seed `0` (smoke/baseline used), `num_predict` `256` (smoke limited to 64 where noted), same fixed system prompt for every call, `keep_alive: 0` on every call, no "answer in the same language" instruction.  
-**Cost model (notional):** input $0.15 / 1M tokens, output $0.60 / 1M tokens.  
-**Status:** **DRAFT / NOT FINAL** — dataset requires student review/approval of every Bangla line; full 50-pair (100-prompt) run and full analysis/chart are not complete. Numbers below are from real smoke/baseline artifacts only.
+**Model:** `qwen2.5:3b` (Ollama, `http://localhost:11434`, local)  
+**Dataset:** `dataset.tsv` — 50 aligned English/Bangla pairs (categories: `question`, `instruction`, `explanation`, `arithmetic`, `summarise`, `long`), same meaning intended per pair.  
+**Settings (identical for both languages):** temperature `0`, seed `0`, `num_predict` `256`, same fixed system prompt (`"You are a helpful assistant."`), `keep_alive: 0` on every call, no "answer in the same language" instruction.  
+**Cost model (notional):** input $0.15 / 1M tokens, output $0.60 / 1M tokens.
 
-## Dataset
-- `a2_bangla/dataset.tsv`: **50 aligned pairs** drafted across categories `question, instruction, explanation, arithmetic, summarise, long` (3–5 sentence long items included), with matching meaning intended.
-- **Needs approval:** per spec, student must review/correct EVERY Bangla line before the full run. See `a2_bangla/DATASET_REVIEW_NOTES.md` for pairs flagged as least certain.
+## Method
+- **Counting (`counter.py`):** injectable-backend client wrapper; reads `prompt_eval_count` (input) and `eval_count` (output), latency, `done_reason`, output text. `keep_alive=0` sent every call. Baseline measured once with prompt `"hi"` (same system prompt); cache check runs `"hi"` twice and confirms identical `prompt_eval_count` (flags missing/mismatch).
+- **Run (`runner.py`):** 50 English + 50 Bangla prompts with identical settings, resumable `results.csv` (one row per call).
+- **Analysis (`analyze.py`):** per-pair ratios, totals, summary statistics, bootstrap 95% CI (10,000 resamples, fixed seed) of per-pair total cost ratio, latency by language, per-category ratios, largest-gap categories, and chart.
 
-## Measurement & methodology
-- `counter.py`: reusable `count_tokens` with injectable backend; returns `input_tokens` (`prompt_eval_count`), `output_tokens` (`eval_count`), `latency_s`, `done_reason`, `output_text`; `keep_alive=0` always. Baseline measured once with tiny prompt `"hi"`; cache check runs same prompt twice and confirms identical `prompt_eval_count` (flags missing/mismatch).
-- `runner.py`: sends English and Bangla with identical settings, writes `results.csv` with required columns, resumable.
-- `analyze.py`: produces `comparison.csv` (per-pair EN/BN input/output tokens, input/output/total cost ratios), summary stats (totals, input/total cost ratios, mean/median/min/max, bootstrap 95% CI with 10,000 resamples, fixed seed), latency per language, per-category ratios, largest-gap categories, and a category-ratio chart PNG.
+**Baseline & cache (real, `baseline_and_cache.json`):** baseline (`"hi"`) `input_tokens=20`, `output_tokens=10`, `done_reason=stop`; cache check **OK** (`prompt_eval_count` 20 and 20).
 
-## Baseline & cache check (real)
-From `a2_bangla/baseline_and_cache.json` (prompt `"hi"`):
-- Baseline: `input_tokens=20`, `output_tokens=10`, `done_reason=stop`, latency ~`6.44s`, output: `"Hello! How can I assist you today?"`
-- Cache check: **OK** (`prompt_eval_count` identical on two consecutive calls with `keep_alive=0`: `20`, `20`).
+## Results
 
-## Smoke run (real, partial/incomplete)
-- Command: `python3 runner.py --dataset dataset.tsv --out smoke_results.csv --limit-pairs 3 --num-predict 64`
-- `smoke_results.csv` contains partial results (run may not have completed all 6 prompts at generation time). Analysis artifacts generated: `smoke_comparison.csv`, attempt at `smoke_chart.png`.
-- **Smoke summary (from completed pair(s) only, via `analyze.py` on `smoke_results.csv`):**
-  - Totals (completed rows): EN in `27`, BN in `50`, EN out `10`, BN out `39`, EN cost `1.005e-05`, BN cost `3.09e-05`
-  - Input cost ratio (total): `1.8518518518518519`; Total cost ratio (total): `3.074626865671642`
-  - Per-pair total cost ratio: mean/median/min/max `3.074626865671642`, bootstrap 95% CI `[3.074626865671642, 3.074626865671642]` (n=1 completed pair)
-  - Per-category (question, n=1): mean input ratio `1.8519`, mean output ratio `3.9`, mean total cost ratio `3.0746`
-  - Latency (completed rows): EN mean `27.45s` (min `8.77`, max `46.14`), BN mean `47.32s`
-  - Chart: generation failed in this environment (`No module named 'matplotlib'`) for the smoke analysis.
+### Totals and aggregate ratios
+| Measure | English | Bangla | Bangla/English ratio |
+|---|---:|---:|---:|
+| Input tokens (total) | 2140 | 7216 | 3.3720 |
+| Output tokens (total) | 6353 | 9644 | 1.5180 |
+| Total cost, USD (notional) | 0.00413280 | 0.00686880 | 1.6620 |
 
-> These smoke numbers are **not** representative of the full 50-pair dataset; they reflect only the completed pair(s) in `smoke_results.csv`.
+- **Input cost ratio (total, by input tokens):** 3.3720
+- **Total cost ratio (total):** 1.6620
 
-## Full run results (required for final)
-_TODO — after dataset approval, run the full 100-prompt experiment and regenerate analysis:_
-```bash
-cd a2_bangla
-python3 runner.py --dataset dataset.tsv --out results.csv --num-predict 256 --seed 0 --temperature 0
-python3 analyze.py --results results.csv --dataset dataset.tsv --comparison comparison.csv --chart chart.png
-```
-Include in final report:
-- Table of all measures (totals, input/total cost ratios, mean/median/min/max, bootstrap 95% CI of per-pair ratio, latency per language).
-- Per-category ratios and largest-gap categories.
-- Chart image (`chart.png`).
+### Per-pair ratio statistics (Bangla / English)
+| Ratio | Mean | Median | Min | Max | Bootstrap 95% CI (mean) |
+|---|---:|---:|---:|---:|---:|
+| Input ratio | 2.9677 | 2.7639 | 1.1786 | 5.3562 | — |
+| Output ratio | 2.7175 | 1.5436 | 0.4575 | 17.3846 | — |
+| Total cost ratio | 2.5253 | 1.7090 | 0.5270 | 11.5488 | [2.0454, 3.0811] |
 
-## TODO (student, after reading outputs)
-- **10-pair quality check:** _TODO — manually review 10 pairs from outputs for meaning equivalence/quality._
-- **Surprising prompt explanation:** _TODO — explain a surprising prompt/case._
-- **Candidate extreme-ratio pairs (suggested after full run):** _TODO — populate from `comparison.csv` (highest/lowest total cost ratios) once full results exist._
+### Latency by language (seconds)
+| Language | Mean | Median | Min | Max |
+|---|---:|---:|---:|---:|
+| English | 21.7236 | 19.0379 | 3.6363 | 50.1840 |
+| Bangla | 37.1939 | 33.0696 | 7.4664 | 67.1201 |
 
-## Reproducibility notes
-- Identical settings for EN/BN, fixed system prompt, `keep_alive=0` each call, deterministic bootstrap seed. Results depend on the local `qwen2.5:3b` model/runtime and are written as real artifacts (no fabricated numbers).
+### Per-category mean ratios (Bangla / English)
+| Category | n | Mean input ratio | Mean output ratio | Mean total cost ratio |
+|---|---:|---:|---:|---:|
+| arithmetic | 8 | 1.6989 | 3.9685 | 2.9564 |
+| explanation | 8 | 3.1082 | 1.2473 | 1.3242 |
+| instruction | 8 | 2.4162 | 2.3571 | 2.2659 |
+| long | 10 | 4.6165 | 1.5390 | 1.8218 |
+| question | 8 | 1.8747 | 2.6803 | 2.5084 |
+| summarise | 8 | 3.6795 | 4.8076 | 4.4513 |
+
+### Largest-gap categories (by highest per-pair total cost ratio observed)
+| Category | Pair id | Total cost ratio |
+|---|---:|---:|
+| arithmetic | 32 | 11.5488 |
+| instruction | 14 | 6.1623 |
+| summarise | 38 | 5.7107 |
+
+### Chart
+![Mean total cost ratio by category](chart.png)
+
+*Figure: Mean total cost ratio (Bangla/English) per category. Dashed reference at 1.0 would indicate parity; all categories are above 1.0 on average here.*
+
+## Conclusions
+- **Bangla is more token-expensive than English in this run.** Aggregate totals show Bangla used ~3.37× input tokens and ~1.52× output tokens, for ~1.66× total notional cost overall. Per-pair total cost ratios average ~2.53 (median ~1.71) with a bootstrap 95% CI of [2.05, 3.08], indicating the higher cost is consistent across pairs rather than driven by a single outlier alone.
+- **Input/tokenization overhead dominates.** Bangla prompts consistently required more input tokens (every category mean input ratio > 1), with the largest mean input inflation in `long` (4.62×) and `summarise` (3.68×). This aligns with script/tokenization effects for Bangla in the model/tokenizer.
+- **Output behavior varies by category.** `summarise` and `arithmetic` show high mean output and total cost ratios (summarise mean total 4.45×), while `explanation` is closest to parity in total cost (1.32× mean) despite higher input tokens, partly because English outputs were relatively longer in that category on average.
+- **Latency is higher for Bangla.** Mean latency was ~37.2s (Bangla) vs ~21.7s (English), consistent with higher token counts/processing.
+- **Variability is substantial.** Per-pair total cost ratios range from 0.53× to 11.55× (e.g. pair 32, arithmetic, had very short English vs much longer Bangla output), so category/aggregate trends are more informative than any single pair.
+
+**Reproducibility notes:** results are from real `qwen2.5:3b` runs recorded in `results.csv`; `comparison.csv`/chart derived via `analyze.py` (bootstrap seed fixed). Reruns may vary slightly with runtime/model state despite fixed generation settings, but methodology (`keep_alive=0`, identical settings/prompts) is held constant.
