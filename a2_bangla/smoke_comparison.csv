@@ -1,0 +1,2 @@
+id,category,english_input_tokens,bangla_input_tokens,english_output_tokens,bangla_output_tokens,input_ratio,output_ratio,english_total_cost,bangla_total_cost,total_cost_ratio
+1,question,27,50,10,39,1.8518518518518519,3.9,1.005e-05,3.09e-05,3.074626865671642

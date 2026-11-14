@@ -1,0 +1,121 @@
+[
+  {
+    "id": "q01",
+    "question": "How many orders are there in total?",
+    "type": "simple",
+    "expected": 240,
+    "expected_sql": "SELECT COUNT(*) AS n FROM orders"
+  },
+  {
+    "id": "q02",
+    "question": "How many customers are there?",
+    "type": "simple",
+    "expected": 60,
+    "expected_sql": "SELECT COUNT(*) AS n FROM customers"
+  },
+  {
+    "id": "q03",
+    "question": "How many products are there in the catalog?",
+    "type": "simple",
+    "expected": 50,
+    "expected_sql": "SELECT COUNT(*) AS n FROM products"
+  },
+  {
+    "id": "q04",
+    "question": "What is the total revenue from all order items (sum of quantity * unit_price)?",
+    "type": "simple",
+    "expected": 446920.63,
+    "expected_sql": "SELECT ROUND(SUM(quantity * unit_price), 2) AS total_revenue FROM order_items"
+  },
+  {
+    "id": "q05",
+    "question": "How many orders were placed by customers in the city 'Dhaka'?",
+    "type": "join",
+    "expected": 48,
+    "expected_sql": "SELECT COUNT(*) AS n FROM orders o JOIN customers c ON o.customer_id = c.id WHERE c.city = 'Dhaka'"
+  },
+  {
+    "id": "q06",
+    "question": "How many distinct customers have placed at least one order?",
+    "type": "join",
+    "expected": 60,
+    "expected_sql": "SELECT COUNT(DISTINCT customer_id) AS n FROM orders"
+  },
+  {
+    "id": "q07",
+    "question": "How many order items are for products in the 'Electronics' category?",
+    "type": "join",
+    "expected": 213,
+    "expected_sql": "SELECT COUNT(*) AS n FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'Electronics'"
+  },
+  {
+    "id": "q08",
+    "question": "How many orders are there for each status? Return the count for status 'delivered'.",
+    "type": "grouping",
+    "expected": 78,
+    "expected_sql": "SELECT COUNT(*) AS n FROM orders WHERE status = 'delivered'"
+  },
+  {
+    "id": "q09",
+    "question": "What is the total quantity of items sold per category? Return the total quantity for category 'Books'.",
+    "type": "grouping",
+    "expected": 320,
+    "expected_sql": "SELECT SUM(oi.quantity) AS total_qty FROM order_items oi JOIN products p ON oi.product_id = p.id WHERE p.category = 'Books'"
+  },
+  {
+    "id": "q10",
+    "question": "How many orders did the customer with the most orders place?",
+    "type": "grouping",
+    "expected": 8,
+    "expected_sql": "SELECT MAX(cnt) AS max_orders FROM (SELECT customer_id, COUNT(*) AS cnt FROM orders GROUP BY customer_id)"
+  },
+  {
+    "id": "q11",
+    "question": "What is the average order value (total revenue per order, averaged across all orders), rounded to 2 decimal places?",
+    "type": "calculation",
+    "expected": 1862.17,
+    "expected_sql": "SELECT ROUND(AVG(order_total), 2) AS avg_order_value FROM (SELECT order_id, SUM(quantity * unit_price) AS order_total FROM order_items GROUP BY order_id)"
+  },
+  {
+    "id": "q12",
+    "question": "What percentage of orders have a total value above the minimum order total? Return the percentage rounded to 2 decimal places.",
+    "type": "calculation",
+    "expected": 99.58,
+    "expected_sql": "WITH totals AS (SELECT order_id, SUM(quantity * unit_price) AS total FROM order_items GROUP BY order_id), mn AS (SELECT MIN(total) AS min_total FROM totals) SELECT ROUND(100.0 * SUM(CASE WHEN totals.total > mn.min_total THEN 1 ELSE 0 END) / COUNT(*), 2) AS pct_above_min FROM totals, mn"
+  },
+  {
+    "id": "q13",
+    "question": "What is the difference between the highest and lowest single order total (by order value), rounded to 2 decimal places?",
+    "type": "multi-tool",
+    "expected": 6117.54,
+    "expected_sql": "WITH totals AS (SELECT order_id, SUM(quantity * unit_price) AS total FROM order_items GROUP BY order_id) SELECT ROUND(MAX(total) - MIN(total), 2) AS diff FROM totals"
+  },
+  {
+    "id": "q14",
+    "question": "What is the average number of items per order (sum of quantities divided by number of orders), rounded to 2 decimal places?",
+    "type": "multi-tool",
+    "expected": 7.93,
+    "expected_sql": "SELECT ROUND(CAST(SUM(quantity) AS REAL) / COUNT(DISTINCT order_id), 2) AS avg_items_per_order FROM order_items"
+  },
+  {
+    "id": "q15",
+    "question": "Which customer has the highest lifetime spend? Return their total spend rounded to 2 decimal places.",
+    "type": "calculation",
+    "expected": 15738.83,
+    "expected_sql": "SELECT ROUND(MAX(total_spend), 2) AS max_spend FROM (SELECT o.customer_id, SUM(oi.quantity * oi.unit_price) AS total_spend FROM orders o JOIN order_items oi ON o.id = oi.order_id GROUP BY o.customer_id)"
+  },
+  {
+    "id": "q16",
+    "question": "What is the email address of the customer who placed order id 1?",
+    "type": "unanswerable",
+    "expected": "CANNOT_ANSWER",
+    "expected_sql": null
+  },
+  {
+    "id": "q17",
+    "question": "What was the profit margin on product id 1 in 2024?",
+    "type": "unanswerable",
+    "expected": "CANNOT_ANSWER",
+    "expected_sql": null
+  }
+]

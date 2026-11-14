@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+*.sqlite
+*.sqlite3
+*.db
+a1_sql_agent/data.db
+a1_sql_agent/eval_results.jsonl
+a2_bangla/results.csv
+a2_bangla/comparison.csv
+a2_bangla/*.png
+.env
+.DS_Store
