@@ -13,6 +13,7 @@ Local-only assignments using Ollama (`qwen2.5:3b` at `http://localhost:11434`). 
   - Data/tests: `dataset.tsv` (50 aligned pairs), `tests/` (fake backends)
   - Artifacts (included): `results.csv` (100 calls), `comparison.csv` (50 pairs), `chart.png`, `baseline_and_cache.json`, `smoke_results.csv`, `smoke_comparison.csv`
   - Reports/README: `report_a2.md`, `README.md`
+- `week-02/` — Week 02 assignment (KV-cache size + notice extraction), built on branch `assignment-2`; see `week-02/README.md`. Contains flagged stand-ins for the missing answer key, ledger, and notice corpus.
 - `AI_LOG.md` — per-stage work log
 - `report_a1.md` — A1 report (draft; pending completed baseline + failure analysis/improvement)
 - `report_a2.md` — A2 report (final short report based on included real run)

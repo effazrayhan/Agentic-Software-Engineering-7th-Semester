@@ -44,3 +44,39 @@
 [Stage 10] WROTE: Updated README.md with setup/tests/reproduce commands and artifact layout; added report_a1.md and report_a2.md drafts (real numbers only where available, TODOs elsewhere); re-ran all unit tests (A1: 20 OK, A2: 13 OK).
 [Stage 10] PROVED BY: `cd a1_sql_agent && python3 -m unittest discover -s tests -v` (20 tests OK) and `cd a2_bangla && python3 -m unittest discover -s tests -v` (13 tests OK); presence of README/report files and reproducible commands.
 [Stage 10] I REVIEWED: 
+
+[Stage 11] WROTE: Scaffolded week-02/ (agentlab/, notices/, tests/) for the Week 02 assignment on branch assignment-2; confirmed Ollama is unreachable and no ollama binary is installed, so no real model runs or model-config lookup are possible yet.
+[Stage 11] PROVED BY: `curl -s http://localhost:11434/api/tags` returned nothing and `which ollama` found no binary; empty week-02/ subdirectories created.
+[Stage 11] I REVIEWED: 
+
+[Stage 12] WROTE: Tests-only for Week 02 task 1 and the class-1 ledger stand-in: week-02/tests/test_kv_cache.py (Qwen2.5-7B config 28/4/128, bytes/token, 8k=448 MiB, 32k=1792 MiB, linear scaling) and week-02/tests/test_ledger.py ($0.15/$0.60 per million, accumulation, custom rates); no kv_cache.py or agentlab/lm.py implementation yet.
+[Stage 12] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 2 errors, both ModuleNotFoundError (kv_cache, agentlab.lm), as expected before implementation.
+[Stage 12] I REVIEWED: 
+
+[Stage 13] WROTE: Implemented week-02/kv_cache.py (Qwen2.5-7B config, bytes-per-token formula) and week-02/agentlab/lm.py (class-1 ledger stand-in) plus kv_answer_key.json, explicitly marked as a self-derived stand-in because no official key was supplied.
+[Stage 13] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 7 tests OK; answer-key cross-check confirmed 8192 and 32768 token byte counts match.
+[Stage 13] I REVIEWED: 
+
+[Stage 14] WROTE: Tests-only for the Week 02 notice corpus/schema stand-ins: week-02/tests/test_notices.py checks 50 unique notices with text, an explicit synthetic-source flag, a versioned schema, and validation of valid/unknown-type/missing-field/wrong-version records; no corpus or schema implementation yet.
+[Stage 14] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 7 existing tests OK and test_notices fails with ImportError (SCHEMA_VERSION missing), as expected pre-implementation.
+[Stage 14] I REVIEWED: 
+
+[Stage 15] WROTE: Implemented week-02/notices/ (__init__.py loaders/validator, corpus.json with 50 synthetic domain notices clearly flagged as stand-ins, schema_v1.json with schema_version const and enums).
+[Stage 15] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 15 tests OK (50 unique notices, synthetic flag, versioned schema, valid/invalid records).
+[Stage 15] I REVIEWED: 
+
+[Stage 16] WROTE: Tests-only for week-02/extract.py: fake backend checks 3 runs x 2 approaches per notice (300 calls for 50 notices), schema passed only to grammar calls with identical system prompt/prompt, ledger prices every call, required result columns, invalid output recorded without crashing, fenced JSON accepted, summarize compares valid counts and cost; no implementation yet.
+[Stage 16] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 15 existing tests OK and test_extract fails with ModuleNotFoundError: No module named 'extract', as expected pre-implementation.
+[Stage 16] I REVIEWED: 
+
+[Stage 17] WROTE: Implemented week-02/extract.py (fixed system prompt, per-approach schema passing, JSON/fence parsing with validation, ledger-priced rows, summarize, Ollama chat backend with stream=False/keep_alive=0/temperature 0/seed 0/num_predict 256, and CLI writing results.jsonl + comparison.json).
+[Stage 17] PROVED BY: `cd week-02 && python3 -m unittest discover -s tests -v` — 23 tests OK; `python3 extract.py --help` OK; monkeypatched-backend CLI self-check wrote 100 rows and a summary with 50 valid grammar records.
+[Stage 17] I REVIEWED: 
+
+[Stage 18] WROTE: Added week-02/README.md (setup, tests, KV-cache command, extraction command, stand-ins warning, model tag) and week-02/report.md (real KV-cache table with explicit missing-official-key note; extraction measures left as TODO because no real run exists), plus a pointer in the top-level README.
+[Stage 18] PROVED BY: all suites re-run — A1 20 OK after `python3 build_db.py` (DB is gitignored/missing in this checkout), A2 13 OK, week-02 23 OK.
+[Stage 18] I REVIEWED: 
+
+[Stage 19] WROTE: Installed Ollama 0.40.16 locally under /tmp/opencode/ollama (official installer needed sudo), started the server, pulled qwen2.5:3b, updated week-02/report.md to record the real 2-call smoke test and current environment status; no code changes.
+[Stage 19] PROVED BY: `/api/tags` lists qwen2.5:3b; week-02 unit tests 23 OK; real smoke run of one notice x 2 approaches produced 2 valid records (120 input / 91 output tokens each, $0.0000726 each).
+[Stage 19] I REVIEWED: 

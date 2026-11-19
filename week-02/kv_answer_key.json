@@ -1,0 +1,9 @@
+{
+  "_note": "Stand-in answer key; no official key was supplied. Derived from published Qwen2.5-7B architecture (28 layers, 4 KV heads, head_dim 128) assuming fp16 weights (2 bytes per element). Verify against the course key when available.",
+  "model": "Qwen2.5-7B",
+  "bytes_per_token": 57344,
+  "contexts": {
+    "8192": {"bytes": 469762048, "mib": 448},
+    "32768": {"bytes": 1879048192, "mib": 1792}
+  }
+}

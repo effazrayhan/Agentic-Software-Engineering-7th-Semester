@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.local/week02/notices/schema_v1.json",
+  "title": "DomainNotice",
+  "type": "object",
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "notice_id": {"type": "string"},
+    "domain": {"type": "string"},
+    "notice_type": {
+      "type": "string",
+      "enum": ["renewal", "expiry", "suspension", "transfer", "ownership", "dns", "security"]
+    },
+    "severity": {"type": "string", "enum": ["info", "warning", "critical"]},
+    "due_date": {"type": ["string", "null"]},
+    "summary": {"type": "string"}
+  },
+  "required": [
+    "schema_version",
+    "notice_id",
+    "domain",
+    "notice_type",
+    "severity",
+    "due_date",
+    "summary"
+  ],
+  "additionalProperties": false
+}
